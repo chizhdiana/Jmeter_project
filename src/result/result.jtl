@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../extras/jmeter-results-detail-report.xsl"?>
+<testResults version="1.2">
+<httpSample t="1459" it="0" lt="216" ct="168" ts="1512998030547" s="true" lb="List_Users" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1184" sby="388" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion_Code</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name> Assertion_Json</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <httpSample t="216" it="0" lt="216" ct="168" ts="1512998029304" s="true" lb="http://reqres.in///api/users?page=2" rc="301" rm="Moved Permanently" tn="Thread Group 1-1" dt="" by="299" sby="194" ng="1" na="1"/>
+  <httpSample t="1240" it="0" lt="1240" ct="807" ts="1512998030547" s="true" lb="https://reqres.in/api/users?page=2" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="885" sby="194" ng="1" na="1"/>
+</httpSample>
+<httpSample t="229" it="0" lt="6" ct="0" ts="1512998030811" s="false" lb="Register_SUCCESSFUL" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1049" sby="522" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion_Code</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to contain /201/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion_JSON</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /token/</failureMessage>
+  </assertionResult>
+  <httpSample t="6" it="0" lt="6" ct="0" ts="1512998030588" s="true" lb="http://reqres.in///api/register" rc="301" rm="Moved Permanently" tn="Thread Group 1-1" dt="" by="295" sby="263" ng="1" na="1"/>
+  <httpSample t="223" it="0" lt="223" ct="0" ts="1512998030811" s="true" lb="https://reqres.in/api/register" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="754" sby="259" ng="1" na="1"/>
+  <responseData class="java.lang.String">{&quot;page&quot;:1,&quot;per_page&quot;:3,&quot;total&quot;:12,&quot;total_pages&quot;:4,&quot;data&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;cerulean&quot;,&quot;year&quot;:2000,&quot;color&quot;:&quot;#98B2D1&quot;,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;}]}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;email&quot;: &quot;chizhdiana1@gmail.com&quot;,&#xd;
+    &quot;password&quot;: &quot; 1234&quot;&#xd;
+}</queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/register</redirectLocation>
+</httpSample>
+<httpSample t="221" it="0" lt="5" ct="0" ts="1512998031134" s="false" lb="Register_SUCCESSFUL" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1049" sby="524" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion_Code</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to contain /201/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion_JSON</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /token/</failureMessage>
+  </assertionResult>
+  <httpSample t="5" it="0" lt="5" ct="0" ts="1512998030918" s="true" lb="http://reqres.in///api/register" rc="301" rm="Moved Permanently" tn="Thread Group 1-1" dt="" by="295" sby="264" ng="1" na="1"/>
+  <httpSample t="215" it="0" lt="215" ct="0" ts="1512998031134" s="true" lb="https://reqres.in/api/register" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="754" sby="260" ng="1" na="1"/>
+  <responseData class="java.lang.String">{&quot;page&quot;:1,&quot;per_page&quot;:3,&quot;total&quot;:12,&quot;total_pages&quot;:4,&quot;data&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;cerulean&quot;,&quot;year&quot;:2000,&quot;color&quot;:&quot;#98B2D1&quot;,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;}]}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;email&quot;: &quot;chizhdiana2@gmail.com&quot;,&#xd;
+    &quot;password&quot;: &quot; 12345&quot;&#xd;
+}</queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/register</redirectLocation>
+</httpSample>
+<httpSample t="222" it="0" lt="4" ct="0" ts="1512998031362" s="false" lb="Register_SUCCESSFUL" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1049" sby="526" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion_Code</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to contain /201/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion_JSON</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /token/</failureMessage>
+  </assertionResult>
+  <httpSample t="4" it="0" lt="4" ct="0" ts="1512998031144" s="true" lb="http://reqres.in///api/register" rc="301" rm="Moved Permanently" tn="Thread Group 1-1" dt="" by="295" sby="265" ng="1" na="1"/>
+  <httpSample t="218" it="0" lt="218" ct="0" ts="1512998031362" s="true" lb="https://reqres.in/api/register" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="754" sby="261" ng="1" na="1"/>
+  <responseData class="java.lang.String">{&quot;page&quot;:1,&quot;per_page&quot;:3,&quot;total&quot;:12,&quot;total_pages&quot;:4,&quot;data&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;cerulean&quot;,&quot;year&quot;:2000,&quot;color&quot;:&quot;#98B2D1&quot;,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;}]}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;email&quot;: &quot;chizhdiana3@gmail.com&quot;,&#xd;
+    &quot;password&quot;: &quot; 123456&quot;&#xd;
+}</queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/register</redirectLocation>
+</httpSample>
+<httpSample t="434" it="0" lt="12" ct="6" ts="1512998031804" s="false" lb="Register_SUCCESSFUL" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1049" sby="528" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion_Code</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to contain /201/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion_JSON</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /token/</failureMessage>
+  </assertionResult>
+  <httpSample t="12" it="0" lt="12" ct="6" ts="1512998031382" s="true" lb="http://reqres.in///api/register" rc="301" rm="Moved Permanently" tn="Thread Group 1-1" dt="" by="295" sby="266" ng="1" na="1"/>
+  <httpSample t="422" it="0" lt="422" ct="15" ts="1512998031804" s="true" lb="https://reqres.in/api/register" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="754" sby="262" ng="1" na="1"/>
+  <responseData class="java.lang.String">{&quot;page&quot;:1,&quot;per_page&quot;:3,&quot;total&quot;:12,&quot;total_pages&quot;:4,&quot;data&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;cerulean&quot;,&quot;year&quot;:2000,&quot;color&quot;:&quot;#98B2D1&quot;,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;}]}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;email&quot;: &quot;chizhdiana4@gmail.com&quot;,&#xd;
+    &quot;password&quot;: &quot; 1234567&quot;&#xd;
+}</queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/register</redirectLocation>
+</httpSample>
+<httpSample t="430" it="0" lt="11" ct="0" ts="1512998032237" s="false" lb="Register_SUCCESSFUL" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1049" sby="532" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion_Code</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to contain /201/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion_JSON</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /token/</failureMessage>
+  </assertionResult>
+  <httpSample t="11" it="0" lt="11" ct="0" ts="1512998031818" s="true" lb="http://reqres.in///api/register" rc="301" rm="Moved Permanently" tn="Thread Group 1-1" dt="" by="295" sby="268" ng="1" na="1"/>
+  <httpSample t="419" it="0" lt="419" ct="0" ts="1512998032237" s="true" lb="https://reqres.in/api/register" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="754" sby="264" ng="1" na="1"/>
+  <responseData class="java.lang.String">{&quot;page&quot;:1,&quot;per_page&quot;:3,&quot;total&quot;:12,&quot;total_pages&quot;:4,&quot;data&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;cerulean&quot;,&quot;year&quot;:2000,&quot;color&quot;:&quot;#98B2D1&quot;,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;}]}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;email&quot;: &quot;chizhdiana15@gmail.com&quot;,&#xd;
+    &quot;password&quot;: &quot; 12345678&quot;&#xd;
+}</queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/register</redirectLocation>
+</httpSample>
+<httpSample t="218" it="0" lt="4" ct="0" ts="1512998032460" s="false" lb="Register_UNSUCCESSFUL" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1049" sby="462" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion_Code</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to contain /400/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion_JSON</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /error/</failureMessage>
+  </assertionResult>
+  <httpSample t="4" it="0" lt="4" ct="0" ts="1512998032246" s="true" lb="http://reqres.in///api/register" rc="301" rm="Moved Permanently" tn="Thread Group 1-1" dt="" by="295" sby="233" ng="1" na="1"/>
+  <httpSample t="214" it="0" lt="214" ct="0" ts="1512998032460" s="true" lb="https://reqres.in/api/register" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="754" sby="229" ng="1" na="1"/>
+  <responseData class="java.lang.String">{&quot;page&quot;:1,&quot;per_page&quot;:3,&quot;total&quot;:12,&quot;total_pages&quot;:4,&quot;data&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;cerulean&quot;,&quot;year&quot;:2000,&quot;color&quot;:&quot;#98B2D1&quot;,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;}]}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;email&quot;: &quot;sydney@fife&quot;&#xd;
+    &#xd;
+}</queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/register</redirectLocation>
+</httpSample>
+<httpSample t="413" it="0" lt="5" ct="0" ts="1512998032877" s="false" lb="Login_SUCCESSFUL" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1046" sby="508" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion_Code</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion_JSON</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /error/</failureMessage>
+  </assertionResult>
+  <httpSample t="5" it="0" lt="5" ct="0" ts="1512998032469" s="true" lb="http://reqres.in///api/login" rc="301" rm="Moved Permanently" tn="Thread Group 1-1" dt="" by="292" sby="256" ng="1" na="1"/>
+  <httpSample t="407" it="0" lt="407" ct="0" ts="1512998032877" s="true" lb="https://reqres.in/api/login" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="754" sby="252" ng="1" na="1"/>
+  <responseData class="java.lang.String">{&quot;page&quot;:1,&quot;per_page&quot;:3,&quot;total&quot;:12,&quot;total_pages&quot;:4,&quot;data&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;cerulean&quot;,&quot;year&quot;:2000,&quot;color&quot;:&quot;#98B2D1&quot;,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;}]}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;email&quot;: &quot;peter@klaven&quot;,&#xd;
+    &quot;password&quot;: &quot;cityslicka&quot;&#xd;
+}</queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/login</redirectLocation>
+</httpSample>
+<httpSample t="415" it="0" lt="5" ct="0" ts="1512998033296" s="false" lb="Login_UNSUCCESSFUL" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1046" sby="446" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /error/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion_CODE</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /400/</failureMessage>
+  </assertionResult>
+  <httpSample t="5" it="0" lt="5" ct="0" ts="1512998032886" s="true" lb="http://reqres.in///api/login" rc="301" rm="Moved Permanently" tn="Thread Group 1-1" dt="" by="292" sby="225" ng="1" na="1"/>
+  <httpSample t="410" it="0" lt="410" ct="0" ts="1512998033296" s="true" lb="https://reqres.in/api/login" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="754" sby="221" ng="1" na="1"/>
+  <responseData class="java.lang.String">{&quot;page&quot;:1,&quot;per_page&quot;:3,&quot;total&quot;:12,&quot;total_pages&quot;:4,&quot;data&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;cerulean&quot;,&quot;year&quot;:2000,&quot;color&quot;:&quot;#98B2D1&quot;,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;}]}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;email&quot;: &quot;peter@klaven&quot;&#xd;
+}</queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/login</redirectLocation>
+</httpSample>
+
+</testResults>
